@@ -1,0 +1,39 @@
+name: graphql_pokemon
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  gql_http_link: ^0.4.2
+  ferry_flutter:
+
+  artemis: ^7.2.6-beta
+  equatable: ^2.0.3
+  gql: ^0.13.1-alpha
+  # 2021/12/12にまっさらな状態でpub getするとこのパッケージの別バージョンでエラーが出たので一旦このバージョンで固定
+  gql_exec:
+  json_annotation: ^4.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+  ferry_generator: ^0.5.0-dev.10
+  build_runner: ^2.1.11
+
+  json_serializable: ^6.0.1
+
+flutter:
+
+  uses-material-design: true

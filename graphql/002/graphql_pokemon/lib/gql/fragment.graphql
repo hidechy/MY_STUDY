@@ -1,0 +1,6 @@
+fragment pokemonField on Pokemon {
+    id
+    name
+    image
+    types
+}

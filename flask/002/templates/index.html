@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>ブログアプリケーション</h1>
+
+<a href="/create">新規作成</a>
+
+{% for post in posts %}
+<article>
+    <h2>{{post.title}}</h2>
+    <p>作成日時： {{post.created_at}}</p>
+    <p>{{post.body}}</p>
+    
+    <a href="/{{post.id}}/update">更新</a>
+    <a href="/{{post.id}}/delete">削除</a>
+
+</article>
+{% endfor %}
+
+{% endblock %}
