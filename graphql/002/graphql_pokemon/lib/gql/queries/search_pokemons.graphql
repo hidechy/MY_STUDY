@@ -1,7 +1,0 @@
-query searchPokemons {
-    pokemons(
-        first: 20
-    ) {
-        ...pokemonField
-    }
-}
