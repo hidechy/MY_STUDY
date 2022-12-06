@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package decimal_to_binary;
+
+service Converter {
+  rpc Convert (ConvertRequest) returns (ConvertResponse) {}
+}
+
+message ConvertRequest {
+  int32 decimal = 1;
+  string binary = 2;
+}
+
+message ConvertResponse {
+  bool isCorrect = 1;
+  string answer = 2;
+}

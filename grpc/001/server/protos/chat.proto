@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package chat;
+
+service ChatConnecter {
+  rpc connect (stream ChatConnectRequest) returns (stream ChatConnectResponse) {}
+}
+
+message ChatConnectRequest {
+  string message = 1;
+}
+
+message ChatConnectResponse {
+  repeated Message messages = 1;
+}
+
+message Message {
+  string message = 1;
+  int64 unixTime = 2;
+}

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c0c745ce-99df-4888-a99c-1ca7566fe100" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../app/lib/chat_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/lib/decimal_to_binary_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/lib/hello_world_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/lib/word_count_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/.idea/grpc_gen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/chat/chat.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/chat/chat.pb.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/chat/chat.pbenum.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/chat/chat.pbgrpc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/chat/chat.pbjson.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/decimal_to_binary/decimal_to_binary.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/decimal_to_binary/decimal_to_binary.pb.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/decimal_to_binary/decimal_to_binary.pbenum.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/decimal_to_binary/decimal_to_binary.pbgrpc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/decimal_to_binary/decimal_to_binary.pbjson.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/helloworld.pb.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/helloworld.pbenum.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/helloworld.pbgrpc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/helloworld.pbjson.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/time_notification/time_notification.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/time_notification/time_notification.pb.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/time_notification/time_notification.pbenum.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/time_notification/time_notification.pbgrpc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/time_notification/time_notification.pbjson.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/word_count/word_count.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/word_count/word_count.pb.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/word_count/word_count.pbenum.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/word_count/word_count.pbgrpc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc_gen/lib/src/word_count/word_count.pbjson.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/chat_connecter_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/converter_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/greeter_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/time_notifier_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/word_counter_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protos/chat.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protos/decimal_to_binary.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protos/time_notification.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protos/word_count.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../laravel/002/laravel-lighthouse-handson" beforeDir="false" afterPath="$PROJECT_DIR$/../../../laravel/002/laravel-lighthouse-handson" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IWOi9ulxHAHtqSL4UXtbZDOfYM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0c745ce-99df-4888-a99c-1ca7566fe100" name="Changes" comment="" />
+      <created>1670293997670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670293997670</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

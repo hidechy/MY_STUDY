@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package time_notification;
+
+service TimeNotifier {
+  rpc notifier (TimeNotificationRequest) returns (TimeNotificationResponse) {}
+}
+
+message TimeNotificationRequest {
+  int32 interval = 1;
+}
+
+message TimeNotificationResponse {
+  string unixTime = 1;
+}

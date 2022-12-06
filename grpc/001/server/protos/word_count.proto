@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package word_count;
+
+service WordCounter {
+  rpc count (stream WordCountRequest) returns (WordCountResponse) {}
+}
+
+message WordCountRequest {
+  string word = 1;
+}
+
+message WordCountResponse {
+  int32 count = 1;
+}
