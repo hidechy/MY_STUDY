@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/golang/protobuf/jsonpb"
 	"google.golang.org/protobuf/proto"
 	"io/ioutil"
 	"log"
@@ -36,20 +37,33 @@ func main() {
 		log.Fatalln("Can't write", err)
 	}
 
-	///////
+	/////////
+	//
+	//in, err := ioutil.ReadFile("test.bin")
+	//if err != nil {
+	//	log.Fatalln("Can't read file", err)
+	//}
+	//
+	//readEmployee := &pb.Employee{}
+	//
+	//err = proto.Unmarshal(in, readEmployee)
+	//if err != nil {
+	//	log.Fatalln("Can't deserialize", err)
+	//}
+	//
+	//fmt.Println(readEmployee)
 
-	in, err := ioutil.ReadFile("test.bin")
+	m := jsonpb.Marshaler{}
+	out, err := m.MarshalToString(employee)
 	if err != nil {
-		log.Fatalln("Can't read file", err)
+		log.Fatalln("Can't marshal to json", err)
 	}
+	//	fmt.Println(out)
 
 	readEmployee := &pb.Employee{}
-
-	err = proto.Unmarshal(in, readEmployee)
-	if err != nil {
-		log.Fatalln("Can't deserialize", err)
+	if err := jsonpb.UnmarshalString(out, readEmployee); err != nil {
+		log.Fatalln("Can't unmarshal from json", err)
 	}
-
 	fmt.Println(readEmployee)
 
 }
