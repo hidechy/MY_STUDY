@@ -21,16 +21,18 @@ func main() {
 
 	client := pb.NewFileServiceClient(conn)
 
-	callListFiles(client)
-
-	callDownload(client)
+	//CallListFiles(client)
+	//
+	//CallDownload(client)
+	//
+	//CallUpload(client)
 
 	//
-	CallUpload(client)
+	CallUploadAndNotifyProgress(client)
 	//
 }
 
-func callListFiles(client pb.FileServiceClient) {
+func CallListFiles(client pb.FileServiceClient) {
 	res, err := client.ListFiles(context.Background(), &pb.ListFilesRequest{})
 	if err != nil {
 		log.Fatalln(err)
@@ -39,7 +41,7 @@ func callListFiles(client pb.FileServiceClient) {
 	fmt.Println(res.GetFilenames())
 }
 
-func callDownload(client pb.FileServiceClient) {
+func CallDownload(client pb.FileServiceClient) {
 	req := &pb.DownloadRequest{Filename: "name.txt"}
 	stream, err := client.Download(context.Background(), req)
 	if err != nil {
@@ -60,7 +62,6 @@ func callDownload(client pb.FileServiceClient) {
 	}
 }
 
-//
 func CallUpload(client pb.FileServiceClient) {
 	filename := "sports.txt"
 	path := "/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/002/grpc-lesson/storage/" + filename
@@ -102,6 +103,69 @@ func CallUpload(client pb.FileServiceClient) {
 	}
 
 	log.Printf("received data size: %v", res.GetSize())
+}
+
+//
+func CallUploadAndNotifyProgress(client pb.FileServiceClient) {
+	filename := "sports.txt"
+	path := "/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/002/grpc-lesson/storage/" + filename
+
+	file, err := os.Open(path)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	defer file.Close()
+
+	stream, err := client.UploadAndNotifyProgress(context.Background())
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	//request
+	buf := make([]byte, 5)
+
+	go func() {
+		for {
+			n, err := file.Read(buf)
+			if n == 0 || err == io.EOF {
+				break
+			}
+			if err != nil {
+				log.Fatalln(err)
+			}
+
+			req := &pb.UploadAndNotifyProgressRequest{Data: buf[:n]}
+			sendErr := stream.Send(req)
+			if sendErr != nil {
+				log.Fatalln(sendErr)
+			}
+			time.Sleep(1 * time.Second)
+		}
+
+		err := stream.CloseSend()
+		if err != nil {
+			log.Fatalln(err)
+		}
+	}()
+
+	//response
+	ch := make(chan struct{})
+	go func() {
+		for {
+			res, err := stream.Recv()
+			if err == io.EOF {
+				break
+			}
+			if err != nil {
+				log.Fatalln(err)
+			}
+			log.Printf("received message: %v", res.GetMsg())
+		}
+
+		close(ch)
+	}()
+	<-ch
 }
 
 //
