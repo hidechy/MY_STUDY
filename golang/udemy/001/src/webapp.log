@@ -1,0 +1,91 @@
+2022/12/16 17:44:28 main.go:15: test
+2022/12/16 18:13:08 main.go:16: test
+2022/12/16 21:17:43 main.go:16: test
+2022/12/17 19:24:29 server.go:3197: http: panic serving [::1]:59579: template: login.html:1: function "definel" not defined
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x1048c4da0, 0x140001960f0})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/app/controllers.generateHTML({0x104921a20?, 0x140000dc000}, {0x0, 0x0}, {0x140000a59c8?, 0x3, 0x0?})
+	/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/udemy/001/src/app/controllers/server.go:16 +0xd0
+todo/app/controllers.login({0x104921a20?, 0x140000dc000?}, 0x140000a5a3b?)
+	/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/udemy/001/src/app/controllers/route_auth.go:37 +0x84
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104921a20?, 0x140000dc000?}, 0x1043edd40?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104921a20, 0x140000dc000}, 0x140000d4000)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f620?}, {0x104921a20, 0x140000dc000}, 0x140000d4000)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117360, {0x104921c78, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/17 19:24:29 server.go:3197: http: panic serving [::1]:59580: template: login.html:1: function "definel" not defined
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x1048c4da0, 0x140001962c0})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/app/controllers.generateHTML({0x104921a20?, 0x140001de000}, {0x0, 0x0}, {0x140001879c8?, 0x3, 0x0?})
+	/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/udemy/001/src/app/controllers/server.go:16 +0xd0
+todo/app/controllers.login({0x104921a20?, 0x140001de000?}, 0x14000187a3b?)
+	/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/udemy/001/src/app/controllers/route_auth.go:37 +0x84
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104921a20?, 0x140001de000?}, 0x1043edd40?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104921a20, 0x140001de000}, 0x140001d4000)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001923f0?}, {0x104921a20, 0x140001de000}, 0x140001d4000)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001d2000, {0x104921c78, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/17 19:24:30 server.go:3197: http: panic serving [::1]:59581: template: login.html:1: function "definel" not defined
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x1048c4da0, 0x140000132a0})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/app/controllers.generateHTML({0x104921a20?, 0x140001641c0}, {0x0, 0x0}, {0x1400005a9c8?, 0x3, 0x0?})
+	/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/udemy/001/src/app/controllers/server.go:16 +0xd0
+todo/app/controllers.login({0x104921a20?, 0x140001641c0?}, 0x1400005aa3b?)
+	/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/udemy/001/src/app/controllers/route_auth.go:37 +0x84
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104921a20?, 0x140001641c0?}, 0x1043edd40?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104921a20, 0x140001641c0}, 0x14000154200)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007fa70?}, {0x104921a20, 0x140001641c0}, 0x14000154200)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117400, {0x104921c78, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/17 19:24:35 server.go:3197: http: panic serving [::1]:59582: template: login.html:1: function "definel" not defined
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x1048c4da0, 0x14000013470})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/app/controllers.generateHTML({0x104921a20?, 0x140001642a0}, {0x0, 0x0}, {0x1400005a9c8?, 0x3, 0x0?})
+	/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/udemy/001/src/app/controllers/server.go:16 +0xd0
+todo/app/controllers.login({0x104921a20?, 0x140001642a0?}, 0x1400005aa3b?)
+	/Users/toyohide/Desktop/hideyuki/MY_STUDY/golang/udemy/001/src/app/controllers/route_auth.go:37 +0x84
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104921a20?, 0x140001642a0?}, 0x1043edd40?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104921a20, 0x140001642a0}, 0x14000154400)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000200240?}, {0x104921a20, 0x140001642a0}, 0x14000154400)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001174a0, {0x104921c78, 0x1400007f530})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
