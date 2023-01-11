@@ -1,0 +1,13 @@
+{% extends "posts/base.html" %}
+
+{% block title %}
+{{ post.id }}
+{% endblock %}
+
+{% block content %}
+<div>#{{ post.id }} : {{ post.title }}</div>
+<div>{{ post.summary }}</div>
+<img src="{{ post.image.url }}" width="100">
+<div>{{ post.created_at }}</div>
+<hr>
+{% endblock %}
